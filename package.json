@@ -4,17 +4,18 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "npx @cloudflare/next-on-pages build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "decimal.js": "^10.6.0",
-    "next": "15.5.5",
+    "next": "^15.5.2",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.16",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
