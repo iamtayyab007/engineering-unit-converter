@@ -52,7 +52,7 @@ export default function UnitConverter() {
             toUnit
           );
           setResult(formatWithSignificantDigits(convertedValue));
-        } catch (error) {
+        } catch {
           setResult("Error");
         }
       }

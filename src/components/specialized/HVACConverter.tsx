@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Decimal } from 'decimal.js';
-import { convertWithPrecision, formatWithSignificantDigits } from '@/lib/conversion';
+import { formatWithSignificantDigits } from '@/lib/conversion';
 
 type ConversionType = 'btu-tons' | 'cfm' | 'static-pressure';
 
@@ -160,8 +160,8 @@ export default function HVACConverter() {
       }
       
       setResult(formatWithSignificantDigits(conversionResult.toString(), 6));
-    } catch (error) {
-      setResult('Error in calculation');
+    } catch {
+      setResult("Error in calculation");
     }
   };
 

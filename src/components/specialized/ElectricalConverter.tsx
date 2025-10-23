@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Decimal } from "decimal.js";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
@@ -103,7 +103,7 @@ const ElectricalConverter: React.FC = () => {
           `R = V ÷ I = ${voltage} V ÷ ${current} A = ${r.toFixed(4)} Ω`
         );
       }
-    } catch (error) {
+    } catch {
       setResult("Error in calculation");
     }
   };
@@ -156,7 +156,7 @@ const ElectricalConverter: React.FC = () => {
           `I = P ÷ V = ${power} W ÷ ${powerVoltage} V = ${i.toFixed(4)} A`
         );
       }
-    } catch (error) {
+    } catch {
       setResult("Error in calculation");
     }
   };
@@ -187,7 +187,7 @@ const ElectricalConverter: React.FC = () => {
       }
 
       setResistanceResult(result);
-    } catch (error) {
+    } catch {
       setResistanceResult("Error in conversion");
     }
   };
@@ -218,7 +218,7 @@ const ElectricalConverter: React.FC = () => {
       }
 
       setCurrentResult(result);
-    } catch (error) {
+    } catch {
       setCurrentResult("Error in conversion");
     }
   };

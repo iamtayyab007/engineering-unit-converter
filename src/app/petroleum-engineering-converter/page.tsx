@@ -30,7 +30,7 @@ export default function PetroleumEngineeringConverterPage() {
           
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Common Petroleum Engineering Formulas</h3>
           <div className="bg-gray-100 p-4 rounded-md mb-6">
-            <p className="mb-2"><strong>Darcy's Law:</strong> Q = (k × A × ΔP) / (μ × L), where Q is flow rate, k is permeability, A is cross-sectional area, ΔP is pressure difference, μ is viscosity, and L is length</p>
+            <p className="mb-2"><strong>Darcy&apos;s Law:</strong> Q = (k × A × ΔP) / (μ × L), where Q is flow rate, k is permeability, A is cross-sectional area, ΔP is pressure difference, μ is viscosity, and L is length</p>
             <p className="mb-2"><strong>Specific Gravity:</strong> SG = ρ / ρwater, where SG is specific gravity, ρ is density of the fluid, and ρwater is density of water</p>
             <p className="mb-2"><strong>Pressure Gradient:</strong> ΔP/L = ρ × g × sin(θ), where ΔP/L is pressure gradient, ρ is density, g is gravitational acceleration, and θ is angle from horizontal</p>
           </div>

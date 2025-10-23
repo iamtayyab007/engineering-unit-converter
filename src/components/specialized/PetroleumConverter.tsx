@@ -47,9 +47,6 @@ const PetroleumConverter: React.FC = () => {
     try {
       const value = new Decimal(pressureValue);
       let psi: Decimal = new Decimal(0);
-      let bar: Decimal;
-      let kPa: Decimal;
-      let MPa: Decimal;
       
       // Convert to base unit (psi) first
       if (pressureUnit === 'psi') {
@@ -63,14 +60,14 @@ const PetroleumConverter: React.FC = () => {
       }
       
       // Convert from base unit to all units
-      bar = psi.dividedBy(14.5038);
-      kPa = psi.dividedBy(0.145038);
-      MPa = psi.dividedBy(145.038);
+      const bar = psi.dividedBy(14.5038);
+      const kPa = psi.dividedBy(0.145038);
+      const MPa = psi.dividedBy(145.038);
       
       const result = `${toStringOrNumber(psi)} psi = ${toStringOrNumber(bar)} bar = ${toStringOrNumber(kPa)} kPa = ${toStringOrNumber(MPa)} MPa`;
       setPressureResult(result);
-    } catch (error) {
-      setPressureResult('Error in conversion');
+    } catch {
+      setPressureResult("Error in calculation");
     }
   };
 
@@ -84,9 +81,6 @@ const PetroleumConverter: React.FC = () => {
     try {
       const value = new Decimal(flowrateValue);
       let bpd: Decimal = new Decimal(0);
-      let m3h: Decimal;
-      let lpm: Decimal;
-      let gpm: Decimal;
       
       // Convert to base unit (bpd - barrels per day) first
       if (flowrateUnit === 'bpd') {
@@ -100,14 +94,14 @@ const PetroleumConverter: React.FC = () => {
       }
       
       // Convert from base unit to all units
-      m3h = bpd.dividedBy(151.4167);
-      lpm = bpd.dividedBy(9.085);
-      gpm = bpd.dividedBy(34.2857);
+      const m3h = bpd.dividedBy(151.4167);
+      const lpm = bpd.dividedBy(9.085);
+      const gpm = bpd.dividedBy(34.2857);
       
       const result = `${toStringOrNumber(bpd)} bpd = ${toStringOrNumber(m3h)} m³/h = ${toStringOrNumber(lpm)} L/min = ${toStringOrNumber(gpm)} gpm`;
       setFlowrateResult(result);
-    } catch (error) {
-      setFlowrateResult('Error in conversion');
+    } catch {
+      setFlowrateResult("Error in calculation");
     }
   };
 
@@ -121,8 +115,6 @@ const PetroleumConverter: React.FC = () => {
     try {
       const value = new Decimal(densityValue);
       let kgm3: Decimal = new Decimal(0);
-      let lbft3: Decimal;
-      let sg: Decimal;
       
       // Convert to base unit (kg/m³) first
       if (densityUnit === 'kgm3') {
@@ -134,13 +126,13 @@ const PetroleumConverter: React.FC = () => {
       }
       
       // Convert from base unit to all units
-      lbft3 = kgm3.dividedBy(16.0185);
-      sg = kgm3.dividedBy(1000);
+      const lbft3 = kgm3.dividedBy(16.0185);
+      const sg = kgm3.dividedBy(1000);
       
       const result = `${toStringOrNumber(kgm3)} kg/m³ = ${toStringOrNumber(lbft3)} lb/ft³ = ${toStringOrNumber(sg)} SG`;
       setDensityResult(result);
-    } catch (error) {
-      setDensityResult('Error in conversion');
+    } catch {
+      setDensityResult("Error in calculation");
     }
   };
 
@@ -154,8 +146,6 @@ const PetroleumConverter: React.FC = () => {
     try {
       const value = new Decimal(viscosityValue);
       let cp: Decimal = new Decimal(0);
-      let pas: Decimal;
-      let poise: Decimal;
       
       // Convert to base unit (centipoise - cp) first
       if (viscosityUnit === 'cp') {
@@ -167,13 +157,13 @@ const PetroleumConverter: React.FC = () => {
       }
       
       // Convert from base unit to all units
-      pas = cp.dividedBy(1000);
-      poise = cp.dividedBy(100);
+      const pas = cp.dividedBy(1000);
+      const poise = cp.dividedBy(100);
       
       const result = `${toStringOrNumber(cp)} cP = ${toStringOrNumber(pas)} Pa·s = ${toStringOrNumber(poise)} poise`;
       setViscosityResult(result);
-    } catch (error) {
-      setViscosityResult('Error in conversion');
+    } catch {
+      setViscosityResult("Error in calculation");
     }
   };
 

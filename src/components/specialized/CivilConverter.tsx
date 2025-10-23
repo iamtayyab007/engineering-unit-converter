@@ -163,7 +163,7 @@ export default function CivilConverter() {
           }
           break;
       }
-    } catch (error) {
+    } catch {
       setResult("Error in calculation");
     }
   };

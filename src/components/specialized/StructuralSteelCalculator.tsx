@@ -69,8 +69,8 @@ const StructuralSteelCalculator: React.FC = () => {
       const requiredI = loadValue.times(spanValue.pow(4)).times(5).dividedBy(E.times(384).times(deflectionValue));
       
       // Find suitable beam from profiles
-      let suitableBeams = Object.entries(beamProfiles)
-        .filter(([_, props]) => new Decimal(props.inertia).greaterThanOrEqualTo(requiredI))
+      const suitableBeams = Object.entries(beamProfiles)
+        .filter(([, props]) => new Decimal(props.inertia).greaterThanOrEqualTo(requiredI))
         .sort((a, b) => a[1].weight - b[1].weight);
       
       if (suitableBeams.length === 0) {
@@ -79,8 +79,8 @@ const StructuralSteelCalculator: React.FC = () => {
         const recommendedBeam = suitableBeams[0];
         setBeamSizeResult(`Recommended beam: ${recommendedBeam[0]} (Depth: ${recommendedBeam[1].depth} in, Weight: ${recommendedBeam[1].weight} lb/ft)\nRequired moment of inertia: ${requiredI.toFixed(2)} in⁴\nBeam moment of inertia: ${recommendedBeam[1].inertia} in⁴`);
       }
-    } catch (error) {
-      setBeamSizeResult('Error in calculation');
+    } catch {
+      setBeamSizeResult("Error in calculation");
     }
   };
 
@@ -103,8 +103,8 @@ const StructuralSteelCalculator: React.FC = () => {
         // For point load at center, calculate equivalent uniform load
         setLoadResult(`Point load at center: ${loadValue.toFixed(2)} lb\nBending moment: ${loadValue.times(lengthValue).dividedBy(4).toFixed(2)} lb-ft\nShear force: ${loadValue.dividedBy(2).toFixed(2)} lb`);
       }
-    } catch (error) {
-      setLoadResult('Error in calculation');
+    } catch {
+      setLoadResult("Error in calculation");
     }
   };
 
@@ -113,8 +113,8 @@ const StructuralSteelCalculator: React.FC = () => {
     try {
       const selectedBeam = beamProfiles[beamProfile as keyof typeof beamProfiles];
       setInertiaResult(`Beam profile: ${beamProfile}\nMoment of inertia: ${selectedBeam.inertia} in⁴\nDepth: ${selectedBeam.depth} in\nWeight: ${selectedBeam.weight} lb/ft`);
-    } catch (error) {
-      setInertiaResult('Error in calculation');
+    } catch {
+      setInertiaResult("Error in calculation");
     }
   };
 
@@ -123,8 +123,8 @@ const StructuralSteelCalculator: React.FC = () => {
     try {
       const selectedBeam = beamProfiles[modulusProfile as keyof typeof beamProfiles];
       setModulusResult(`Beam profile: ${modulusProfile}\nSection modulus: ${selectedBeam.sectionModulus} in³\nMoment of inertia: ${selectedBeam.inertia} in⁴\nDepth: ${selectedBeam.depth} in`);
-    } catch (error) {
-      setModulusResult('Error in calculation');
+    } catch {
+      setModulusResult("Error in calculation");
     }
   };
 

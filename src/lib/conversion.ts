@@ -1,7 +1,7 @@
 // Conversion utilities for precise calculations
 
-import { Unit, convert } from './units';
-import Decimal from 'decimal.js';
+import { Unit } from './units';
+import { Decimal } from 'decimal.js';
 
 /**
  * Format a Decimal result to a string with appropriate precision

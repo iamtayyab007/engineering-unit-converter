@@ -59,7 +59,7 @@ export default function Home() {
               </li>
             </ul>
             <p className="text-gray-700">
-              Whether you're working on calculations, preparing reports, or studying engineering concepts, 
+              Whether you&apos;re working on calculations, preparing reports, or studying engineering concepts, 
               our tool ensures accurate conversions with high precision to meet the demands of engineering applications.
             </p>
           </div>

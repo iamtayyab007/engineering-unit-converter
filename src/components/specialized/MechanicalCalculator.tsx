@@ -2,10 +2,7 @@
 
 import { useState } from 'react';
 import { Decimal } from 'decimal.js';
-import { formatWithSignificantDigits, toStringOrNumber } from '@/lib/conversion';
-import Button from "@/components/ui/Button";
-import Input from "@/components/ui/Input";
-import Select from "@/components/ui/Select";
+import { formatWithSignificantDigits } from '@/lib/conversion';
 
 type CalculationType = 'torque' | 'stress' | 'power' | 'shaft';
 
@@ -96,8 +93,8 @@ export default function MechanicalCalculator() {
           setResult(`${formatWithSignificantDigits(calculationResult.toString(), 6)} mm`);
           break;
       }
-    } catch (error) {
-      setResult('Error in calculation');
+    } catch {
+      setResult("Error in calculation");
     }
   };
 
