@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build && npx opennextjs-cloudflare build",
+    "dev": "next dev",
+    "build": "next build",
+    "build:cloudflare": "next build && npx opennextjs-cloudflare build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint"
   },
   "dependencies": {
     "decimal.js": "^10.6.0",
