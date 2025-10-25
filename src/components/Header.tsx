@@ -21,7 +21,7 @@ export default function Header() {
 
             <div>
               <h1 className="text-xl font-bold">Engineering Unit Converter</h1>
-              <p className="text-xs !text-black">
+              <p className="text-xs text-yellow-300">
                 Precision calculations for every discipline
               </p>
             </div>

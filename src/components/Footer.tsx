@@ -10,12 +10,12 @@ export default function Footer() {
           {/* About Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4 flex items-center">
-              <svg className="w-5 h-5 mr-2 !text-black" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-5 h-5 mr-2 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
               </svg>
               About Our Tool
             </h3>
-            <p className="!text-black text-sm">
+            <p className="text-gray-300 text-sm">
               Engineering Unit Converter is a precision tool designed for engineers, 
               students, and professionals who need accurate unit conversions across 
               multiple engineering disciplines.
