@@ -1,0 +1,75 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-84eb5b96d532ef29.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-24cf16ab6accade8.js",
+      "static/chunks/app/_not-found/page-1dfd0e463bba831f.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-84eb5b96d532ef29.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-24cf16ab6accade8.js",
+      "static/css/1399151dd6832299.css",
+      "static/chunks/932-736c435f29576589.js",
+      "static/chunks/app/layout-b3691366017357a2.js"
+    ],
+    "/civil-engineering-converter/page": [
+      "static/chunks/webpack-84eb5b96d532ef29.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-24cf16ab6accade8.js",
+      "static/chunks/app/civil-engineering-converter/page-79629dfeb8e689cd.js"
+    ],
+    "/electrical-unit-converter/page": [
+      "static/chunks/webpack-84eb5b96d532ef29.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-24cf16ab6accade8.js",
+      "static/chunks/447-64cea9fd463885c7.js",
+      "static/chunks/app/electrical-unit-converter/page-97247f62d5a0fa0f.js"
+    ],
+    "/hvac-unit-converter/page": [
+      "static/chunks/webpack-84eb5b96d532ef29.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-24cf16ab6accade8.js",
+      "static/chunks/447-64cea9fd463885c7.js",
+      "static/chunks/app/hvac-unit-converter/page-efd824e74e08c607.js"
+    ],
+    "/mechanical-engineering-calculators/page": [
+      "static/chunks/webpack-84eb5b96d532ef29.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-24cf16ab6accade8.js",
+      "static/chunks/447-64cea9fd463885c7.js",
+      "static/chunks/app/mechanical-engineering-calculators/page-1deee26c5c1e0e54.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-84eb5b96d532ef29.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-24cf16ab6accade8.js",
+      "static/chunks/447-64cea9fd463885c7.js",
+      "static/chunks/app/page-259f5c37fa9720f8.js"
+    ],
+    "/petroleum-engineering-converter/page": [
+      "static/chunks/webpack-84eb5b96d532ef29.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-24cf16ab6accade8.js",
+      "static/chunks/447-64cea9fd463885c7.js",
+      "static/chunks/app/petroleum-engineering-converter/page-bb4680519262f830.js"
+    ],
+    "/structural-steel-calculator/page": [
+      "static/chunks/webpack-84eb5b96d532ef29.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-e3bf15caf1f1e0f9.js",
+      "static/chunks/main-app-24cf16ab6accade8.js",
+      "static/chunks/447-64cea9fd463885c7.js",
+      "static/chunks/app/structural-steel-calculator/page-f75e066a2034dcba.js"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/civil-engineering-converter",
+      "regex": "^/civil\\-engineering\\-converter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/civil\\-engineering\\-converter(?:/)?$"
+    },
+    {
+      "page": "/electrical-unit-converter",
+      "regex": "^/electrical\\-unit\\-converter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/electrical\\-unit\\-converter(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/hvac-unit-converter",
+      "regex": "^/hvac\\-unit\\-converter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hvac\\-unit\\-converter(?:/)?$"
+    },
+    {
+      "page": "/mechanical-engineering-calculators",
+      "regex": "^/mechanical\\-engineering\\-calculators(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mechanical\\-engineering\\-calculators(?:/)?$"
+    },
+    {
+      "page": "/petroleum-engineering-converter",
+      "regex": "^/petroleum\\-engineering\\-converter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/petroleum\\-engineering\\-converter(?:/)?$"
+    },
+    {
+      "page": "/structural-steel-calculator",
+      "regex": "^/structural\\-steel\\-calculator(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/structural\\-steel\\-calculator(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
