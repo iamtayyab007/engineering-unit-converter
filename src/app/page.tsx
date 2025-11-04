@@ -13,7 +13,7 @@ export default function Home() {
         
         <UnitConverter />
         
-        <section className="mt-16 max-w-4xl mx-auto">
+        <section id="about" className="mt-16 max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">About This Tool</h2>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-gray-700 mb-4">
@@ -65,7 +65,7 @@ export default function Home() {
           </div>
         </section>
         
-        <section className="mt-12 max-w-4xl mx-auto">
+        <section id="features" className="mt-12 max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md">

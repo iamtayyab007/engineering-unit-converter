@@ -12,7 +12,7 @@ export default function Header() {
           <div className="flex items-center space-x-3">
             {/* Engineering Icon - Compass and Ruler */}
             <svg
-              className="w-10 h-10 !text-black"
+              className="w-10 h-10 text-yellow-400"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -93,11 +93,11 @@ export default function Header() {
                 </div>
               </div>
             </div>
-            <Link href="#about" className="hover:!text-black transition-colors">
+            <Link href="/#about" className="hover:!text-black transition-colors">
               About
             </Link>
             <Link
-              href="#features"
+              href="/#features"
               className="hover:!text-black transition-colors"
             >
               Features
@@ -190,11 +190,11 @@ export default function Header() {
               </div>
             </div>
 
-            <Link href="#about" className="hover:!text-black transition-colors">
+            <Link href="/#about" className="hover:!text-black transition-colors">
               About
             </Link>
             <Link
-              href="#features"
+              href="/#features"
               className="hover:!text-black transition-colors"
             >
               Features
