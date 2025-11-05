@@ -7,6 +7,8 @@ import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
+
+
 export const metadata: Metadata = {
   title: 'Engineering Unit Converter | Precise Calculations for Engineers',
   description: 'Free online engineering unit converter with high precision calculations for length, mass, temperature, pressure, force, energy and more. Perfect for engineers, students and professionals.',
@@ -63,6 +65,27 @@ export default function RootLayout({
             }),
           }}
         />
+
+      {/* Google Analytics */}
+ <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q9VXWBZ8JR"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-Q9VXWBZ8JR', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+
       </head>
       <body className={inter.className}>
         <Header />

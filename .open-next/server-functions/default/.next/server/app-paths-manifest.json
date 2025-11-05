@@ -5,7 +5,7 @@
   "/electrical-unit-converter/page": "app/electrical-unit-converter/page.js",
   "/hvac-unit-converter/page": "app/hvac-unit-converter/page.js",
   "/mechanical-engineering-calculators/page": "app/mechanical-engineering-calculators/page.js",
-  "/petroleum-engineering-converter/page": "app/petroleum-engineering-converter/page.js",
   "/page": "app/page.js",
+  "/petroleum-engineering-converter/page": "app/petroleum-engineering-converter/page.js",
   "/structural-steel-calculator/page": "app/structural-steel-calculator/page.js"
 }
